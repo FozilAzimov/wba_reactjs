@@ -1,4 +1,4 @@
-// 2-dars. Prop va Component
+// 2-dars. Prop va Component haqida ma'lumotlar.
 
 
 // Componentga ta'rif;

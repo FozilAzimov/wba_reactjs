@@ -10,7 +10,7 @@ class Student extends React.Component {
     return (
       <div>
         {/* <h1>Hey { children?.title } { children?.status }</h1> */ }
-        { child.id } { child.name }
+        <h1>{ child.id }-{ child.name }</h1>
       </div>
     )
   }

@@ -12,3 +12,10 @@
 // Propga ta'rif;
 // Componentlarda ' this ' kalit so'zi aynan manashu componentning o'ziga teng boladi. Agar biz render bo'layotgan code ichidagi componentning nomini ichida prop berib yuboriladi.
 // Keyin component ichida render ichida va return dan oldin propni this orqali tutib olishimiz mumkin.
+
+// render() bu funcsiya bo'lib componentlar bilan uzviy bog'langan hisoblanadi va malumotlarni ekranga chiqarib beradi.
+// render ichida har doim bitta o'rab turuvchi parent div bo'lishi shart. Agar ko'p bo'lib ketsa ularning faqat birinchisi ekranga chiqdi halos.
+
+// Childeren - bu componentni ichida yani taglari orasida yoziladi va uni tutib olish quyidagicha boladi.
+// Bu childerenni biz this.props.childeren dan tuttib olamiz. Biz kelayotgan propsni distructure yordamida soddaroq usulda olishimiz mumkin.
+// Bir ma'lumot: agar this.props ichida distructure bo'ladigan ma'lumot bor bo'lsa keyn distructure qilinishi shart, aks holda error beradi.

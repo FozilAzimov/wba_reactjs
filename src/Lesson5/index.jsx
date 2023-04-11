@@ -7,6 +7,8 @@ class State extends React.Component {
     name: null,
     status: null,
     data: users,
+    search: "id",
+    active: null,
   };
   render() {
 
@@ -15,7 +17,7 @@ class State extends React.Component {
     }
 
     const onSearch = ({ target }) => {
-      const res = users.filter(value => value.name.toLowerCase().includes(target.value.toLowerCase()));
+      const res = users.filter(value => `${ value[this.state.search] }`.toLowerCase().includes(target.value.toLowerCase()));
       this.setState({ data: res });
     }
 
@@ -31,9 +33,28 @@ class State extends React.Component {
         name: this.state.name,
         status: this.state.status,
       }
-      const res = [...users, user];
-      this.setState({ name: "", status: "", data: res, });
-      console.log(user);
+      this.setState({ name: "", status: "", data: [...users, user], });
+    }
+
+    const onSelect = (e) => {
+      this.setState({ search: e.target.value })
+    }
+
+    const onEdit = ({ id, name, status }, save) => {
+      if (save) this.setState({ active: null });
+      else this.setState({ active: { id, name, status } });
+    }
+
+    const onActiveName = ({ target: { value } }) => {
+      this.setState({ active: { ...this.state.active, name: value } })
+    }
+    const onActiveStatus = ({ target: { value } }) => {
+      this.setState({ active: { ...this.state.active, status: value } })
+    }
+
+    const onSave = ({ id }) => {
+      let res = this.state.data.map(value => value.id === id ? this.state.active : value);
+      this.setState({ data: res, active: null });
     }
 
     return (
@@ -45,6 +66,11 @@ class State extends React.Component {
         <input value={ this.state.status } name="status" onChange={ onInp } type="text" placeholder='status' />
         <button onClick={ onAdd }>Add</button>
         <hr />
+        <select onClick={ onSelect }>
+          <option value="id">ID</option>
+          <option value="name">Name</option>
+          <option value="status">Status</option>
+        </select>
         <input name="search" onChange={ onSearch } type="search" placeholder='search' />
         <table border={ 1 }>
           <thead>
@@ -65,13 +91,21 @@ class State extends React.Component {
                   return (
                     <tr>
                       <td>{ id }</td>
-                      <td>{ name }</td>
-                      <td>{ status }</td>
+                      <td>{ this.state.active?.id === id ? <input onChange={ onActiveName } type='text' defaultValue={ name } /> : name }</td>
+                      <td>{ this.state.active?.id === id ? <input onChange={ onActiveStatus } type='text' defaultValue={ status } /> : status }</td>
                       <td>
                         <button onClick={ () => delBtn(id) }>delete</button>
                       </td>
                       <td>
-                        <button>edit</button>
+                        {
+                          this.state.active?.id === id ?
+                            <>
+                              <button onClick={ () => this.setState({ active: null }) }>cancel</button>
+                              <button onClick={ () => onSave({ id }, this.state.active?.id) }>save</button>
+                            </>
+                            :
+                            <button onClick={ () => onEdit({ id, name, status }, this.state.active?.id) }>edit</button>
+                        }
                       </td>
                     </tr>
                   )

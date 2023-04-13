@@ -11,6 +11,14 @@ import ReactDOM from 'react-dom/client';
 // import './Lesson3/style.css';
 // 3-End
 
+// 4-Start
+// import State from './Lesson4/index';
+// 4-End
+
+// 5-Start
+// import State from './Lesson5/index';
+// 5-End
+
 
 // 2-Start
 // let obj = [
@@ -38,11 +46,11 @@ import ReactDOM from 'react-dom/client';
 // );
 // 2-End
 
-// 3-Start
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <State />
-//   </React.StrictMode >
-// );
-// 3-End
+// 3-4-5-Start
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <State />
+  </React.StrictMode >
+);
+// 3-4-5-End

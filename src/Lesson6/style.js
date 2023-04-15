@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 
 export const Div = styled.div`
@@ -44,4 +44,21 @@ width:${ getSize };
 height:${ getSize };
 background-color:${ getBG };
   border: 3px solid red;
+`
+
+const birXil = css`
+width: 200px;
+font-size: 20px;
+background-color: lightblue;
+border: 1px solid red;
+`
+
+export const H1 = styled.h1`
+${ birXil };
+color: green;
+
+`
+export const P = styled.p`
+${ birXil };
+color: blue;
 `

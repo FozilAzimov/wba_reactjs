@@ -40,3 +40,49 @@
 //   } };
 //   border: 3px solid red;
 // `
+
+// Bizda bundan tashqari { css } - comman css degan tushincha mavjud. Bu asosan style components atributi hisoblanadi.
+// ishlatishdan maqsad shuki bir xil codelar ir joyda takror yozilishini oldini oladi.
+// Misol:
+// h1{
+//   margin: 0;
+//   padding: 0;
+//   font - size: 16px;
+//   border: 1px solid red;
+//   border - radius: 8px;
+//   background: lightblue;
+//   color: green
+// }
+// p{
+//   margin: 0;
+//   padding: 0;
+//   font - size: 16px;
+//   border: 1px solid red;
+//   border - radius: 8px;
+//   background: lightblue;
+//   color: white;
+// }
+
+// anashu codeni comman css orqali soddalashtiramiz.
+// import styled, { css } 'styled-components';
+
+// const style = css`
+//   margin: 0;
+//   padding: 0;
+//   font - size: 16px;
+//   border: 1px solid red;
+//   border - radius: 8px;
+//   background: lightblue;
+// `
+
+// h1{
+//   ${ style }
+//   color: green;
+// }
+
+// p{
+//   ${ style }
+//   color: white;
+// }
+
+// Manashu ko'rinishda soddalashtiriladi

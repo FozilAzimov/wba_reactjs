@@ -1,5 +1,5 @@
 import React from 'react';
-import { Div, Box } from './style.js';
+import { Div, Box, H1, P } from './style.js';
 
 
 class Styled extends React.Component {
@@ -16,6 +16,8 @@ class Styled extends React.Component {
         <Box type="Medium">Medium 150</Box>
         <Box type="Small">Small 100</Box>
         <Box >Default 50</Box>
+        <H1>Webbrain Academy</H1>
+        <P>Webbrain Academy</P>
       </>
 
     )

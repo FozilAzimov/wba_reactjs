@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom/client';
 
 // 2-Start
 // import Student, { Mentor } from './Lesson2/index';
-// import './Lesson2/style.css';
+// import './style.css';
 // 2-End
 
 // 3-Start
 // import State from './Lesson3/index';
-// import './Lesson3/style.css';
 // 3-End
 
 // 4-Start
@@ -18,6 +17,21 @@ import ReactDOM from 'react-dom/client';
 // 5-Start
 // import State from './Lesson5/index';
 // 5-End
+
+// 6-Start
+// import Styled from './Lesson6/index';
+// 6-End
+
+// 7-Start
+
+// 7-End
+
+
+
+
+
+
+
 
 
 // 2-Start
@@ -47,10 +61,25 @@ import ReactDOM from 'react-dom/client';
 // 2-End
 
 // 3-4-5-Start
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <State />
-  </React.StrictMode >
-);
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <State />
+//   </React.StrictMode >
+// );
 // 3-4-5-End
+
+
+// 6-Start
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <Styled />
+//   </React.StrictMode >
+// );
+// 6-End
+
+
+// 7-Start
+
+// 7-End

@@ -89,7 +89,7 @@ class State extends React.Component {
                 ?
                 this.state.data.map(({ id, name, status }) => {
                   return (
-                    <tr>
+                    <tr key={ id }>
                       <td>{ id }</td>
                       <td>{ this.state.active?.id === id ? <input onChange={ onActiveName } type='text' defaultValue={ name } /> : name }</td>
                       <td>{ this.state.active?.id === id ? <input onChange={ onActiveStatus } type='text' defaultValue={ status } /> : status }</td>

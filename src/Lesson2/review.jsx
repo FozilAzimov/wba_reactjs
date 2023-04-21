@@ -18,4 +18,4 @@
 
 // Childeren - bu componentni ichida yani taglari orasida yoziladi va uni tutib olish quyidagicha boladi.
 // Bu childerenni biz this.props.childeren dan tuttib olamiz. Biz kelayotgan propsni distructure yordamida soddaroq usulda olishimiz mumkin.
-// Bir ma'lumot: agar this.props ichida distructure bo'ladigan ma'lumot bor bo'lsa keyn distructure qilinishi shart, aks holda error beradi.
+// Bir ma'lumot: agar this.props ichida distructure bo'ladigan ma'lumot bor bo'lsa keyn distructure qilinishi shart, aks holda error beradi...

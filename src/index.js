@@ -23,8 +23,20 @@ import ReactDOM from 'react-dom/client';
 // 6-End
 
 // 7-Start
-
+// import Root from './Lesson7/root';
+// import './index.css';
 // 7-End
+
+// 8-Start
+// import Root from './Lesson8/root';
+// import './index.css';
+// 8-End
+
+// 9-Start
+import Root from './Lesson9/root';
+import './index.css';
+import { CounterContext } from './Lesson9/Context/Counter';
+// 9-End
 
 
 
@@ -60,26 +72,25 @@ import ReactDOM from 'react-dom/client';
 // );
 // 2-End
 
-// 3-4-5-Start
+// 3-4-5-6-7-8-Start
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
-//   <React.StrictMode>
-//     <State />
-//   </React.StrictMode >
+//   <>
+//     {/* <State /> */ }
+//     {/* <Styled /> */ }
+//     {/* <Root /> */}
+//   </ >
 // );
-// 3-4-5-End
+// 3-4-5-6-7-8-End
 
+// 9-Start
 
-// 6-Start
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <Styled />
-//   </React.StrictMode >
-// );
-// 6-End
-
-
-// 7-Start
-
-// 7-End
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <>
+    <CounterContext>
+      <Root />
+    </CounterContext>
+  </>
+)
+// 9-End

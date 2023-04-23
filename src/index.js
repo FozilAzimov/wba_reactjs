@@ -33,9 +33,9 @@ import ReactDOM from 'react-dom/client';
 // 8-End
 
 // 9-Start
-import Root from './Lesson9/root';
-import './index.css';
-import { CounterContext } from './Lesson9/Context/Counter';
+// import Root from './Lesson9/root';
+// import './index.css';
+// import Context from './Lesson9/components/Context';
 // 9-End
 
 
@@ -84,13 +84,12 @@ import { CounterContext } from './Lesson9/Context/Counter';
 // 3-4-5-6-7-8-End
 
 // 9-Start
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <>
-    <CounterContext>
-      <Root />
-    </CounterContext>
-  </>
-)
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <>
+//     <Context>
+//       <Root />
+//     </Context>
+//   </>
+// )
 // 9-End

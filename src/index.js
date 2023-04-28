@@ -38,6 +38,21 @@ import ReactDOM from 'react-dom/client';
 // import Context from './Lesson9/components/Context';
 // 9-End
 
+// 10-Start
+// import Root from './Lesson10/root';
+// import './index.css';
+// 10-End
+
+// 11-Start
+// import Root from './Lesson11/root';
+// import './index.css';
+// 11-End
+
+// 12-Start
+import Root from './Lesson12/root';
+import './index.css';
+// 12-End
+
 
 
 
@@ -93,3 +108,21 @@ import ReactDOM from 'react-dom/client';
 //   </>
 // )
 // 9-End
+
+// 10-Start
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <>
+//     <Root />
+//   </>
+// )
+// 10-End
+
+// 11-12-Start
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <>
+    <Root />
+  </>
+)
+// 11-12-End

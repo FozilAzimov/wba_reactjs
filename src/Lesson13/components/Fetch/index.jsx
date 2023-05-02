@@ -10,10 +10,10 @@ export default function Fetch() {
     setName(param);
   }
 
-  const Endpoint = `http://api.weatherapi.com/v1/current.json?key=ec8bf3f960c94073b35170212233004&q=${ name }&aqi=no`;
+  const endpoint = `http://api.weatherapi.com/v1/current.json?key=ec8bf3f960c94073b35170212233004&q=${ name }&aqi=no`;
 
   useEffect(() => {
-    fetch(Endpoint, {
+    fetch(endpoint, {
       // method: 'GET','PUT','DELETE','POST'
       method: 'POST',
       headers: {
@@ -25,7 +25,17 @@ export default function Fetch() {
       .then((res) => setData(res.location));
   }, [name]);
 
-  const url = new URL(`http://api.weatherapi.com/v1/current.json?key=ec8bf3f960c94073b35170212233004&q=${ name }&aqi=no`)
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     let res = await fetch(endpoint);
+  //     res = await res.json();
+  //     return res;
+  //   }
+  //   getData(endpoint);
+  // }, [name]);
+
+  const url = new URL(endpoint);
+
   console.log(url.searchParams);
   console.log(url.searchParams.get('q'));
 

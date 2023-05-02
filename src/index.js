@@ -54,9 +54,15 @@ import ReactDOM from 'react-dom/client';
 // 12-End
 
 // 13-Start
-import Root from './Lesson13/root';
-import './index.css';
+// import Root from './Lesson13/root';
+// import './index.css';
 // 13-End
+
+// 14-Start
+import Root from './Lesson14/root';
+import './index.css';
+import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
+// 14-End
 
 
 
@@ -122,10 +128,21 @@ import './index.css';
 // 10-End
 
 // 11-12-13-Start
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <>
+//     <Root />
+//   </>
+// )
+// 11-12-13-End
+
+// 14-Statr
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <Root />
+    <BrowserRouter>
+      <Root />
+    </BrowserRouter>
   </>
 )
-// 11-12-13-End
+// 14-End

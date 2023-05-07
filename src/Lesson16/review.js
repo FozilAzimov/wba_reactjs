@@ -1,18 +1,18 @@
-// axioc - fetch ning alternative i sifatida ishlatiladi.
+// axios - fetch ning alternative i sifatida ishlatiladi.
 // fetchdan ko'ra ishlatilishi oson va sodda. Ishlatish keyslarida imkoniyatlari yuqori.
 // fetch JavaScript ning building funcsiyasi hisoblansa  axioc esa library hisoblanadi.
 
-// axioc ni yuklab olish uchun :
-// npm ishlatsangiz -> npm install axioc
-// yarn ishlatsangiz -> yarn add axioc
+// axios ni yuklab olish uchun :
+// npm ishlatsangiz -> npm install axios
+// yarn ishlatsangiz -> yarn add axios
 
 // fetch chaqirilishida biz uni to'g'ridan to'g'ri ishlatib keta olmaymiz. Oldin uni translate qilish kerak.
-// axioc da bu avtomatic amalga oshiriladi.
+// axios da bu avtomatic amalga oshiriladi.
 
-// fetch ham axioc ham bizga promice qaytaradi.
+// fetch ham axios ham bizga promice qaytaradi.
 
 // fetch ning ikkinchi parametrida  body ishlatiladi.
-// axioc da eda data keladi.
+// axios da eda data keladi.
 
 // fetch da biz backendda request kutish vaqtini - 'setTimeout va  new AbortController()' orqali boshqara olamiz.
-// axioc da esa soddagina qilib - ' timeout ' orqali amalga oshiramiz.
+// axios da esa soddagina qilib - ' timeout ' orqali amalga oshiramiz.

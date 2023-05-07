@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import axios from 'axios';
 
-export default function Axioc() {
+export default function Axios() {
 
   useEffect(() => {
     axios({
@@ -13,6 +13,6 @@ export default function Axioc() {
   }, [])
 
   return (
-    <h1>Axioc Component</h1>
+    <h1>Axios Component</h1>
   )
 }

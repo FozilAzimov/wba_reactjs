@@ -17,6 +17,6 @@ export default function Fetch() {
     signal.abort();
   }, 10000);
   return (
-    <h1>Fetch</h1>
+    <h1>Fetch Component</h1>
   )
 }

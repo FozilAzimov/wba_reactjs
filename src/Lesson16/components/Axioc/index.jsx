@@ -13,6 +13,6 @@ export default function Axioc() {
   }, [])
 
   return (
-    <h1>Axioc</h1>
+    <h1>Axioc Component</h1>
   )
 }

@@ -13,3 +13,6 @@
 
 // fetch ning ikkinchi parametrida  body ishlatiladi.
 // axioc da eda data keladi.
+
+// fetch da biz backendda request kutish vaqtini - 'setTimeout va  new AbortController()' orqali boshqara olamiz.
+// axioc da esa soddagina qilib - ' timeout ' orqali amalga oshiramiz.

@@ -64,12 +64,16 @@ import ReactDOM from 'react-dom/client';
 // import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 // 14-End
 
-
 // 15-Start
-import Root from './Lesson15/root';
-import './index.css';
-import { BrowserRouter } from 'react-router-dom';
+// import Root from './Lesson15/root';
+// import './index.css';
+// import { BrowserRouter } from 'react-router-dom';
 // 15-End
+
+// 16-Start
+import Root from './Lesson16/root';
+import './index.css';
+// 16-End
 
 
 
@@ -134,22 +138,22 @@ import { BrowserRouter } from 'react-router-dom';
 // )
 // 10-End
 
-// 11-12-13-Start
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <>
-//     <Root />
-//   </>
-// )
-// 11-12-13-End
-
-// 14-15-Statr
+// 11-12-13-16-Start
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <BrowserRouter>
-      <Root />
-    </BrowserRouter>
+    <Root />
   </>
 )
+// 11-12-13-16-End
+
+// 14-15-Statr
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <>
+//     <BrowserRouter>
+//       <Root />
+//     </BrowserRouter>
+//   </>
+// )
 // 14-15-End

@@ -71,9 +71,19 @@ import ReactDOM from 'react-dom/client';
 // 15-End
 
 // 16-Start
-import Root from './Lesson16/root';
-import './index.css';
+// import Root from './Lesson16/root';
+// import './index.css';
 // 16-End
+
+// 17-Start
+// import Root from './Lesson17/root';
+// import './index.css';
+// 17-End
+
+// 18-Start
+import Root from './Lesson18/root';
+import './index.css';
+// 18-End
 
 
 
@@ -138,14 +148,14 @@ import './index.css';
 // )
 // 10-End
 
-// 11-12-13-16-Start
+// 11-12-13-16-17-18-Start
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     <Root />
   </>
 )
-// 11-12-13-16-End
+// 11-12-13-16-17-18-End
 
 // 14-15-Statr
 // const root = ReactDOM.createRoot(document.getElementById('root'));
